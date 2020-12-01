@@ -22,8 +22,16 @@ footer {
     color: #ffffff; 
 }
 
+header {
+    background-color: black;
+}
+
 header a {
     color: #ffffff;
+}
+
+main {
+    background-image: url('/images/home-header.jpg');
 }
 
 .cta {
