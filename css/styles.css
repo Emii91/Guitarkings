@@ -43,7 +43,10 @@ header a {
 .cta {
     background-color: #bb0000;
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 10px 80ox;
+    border-radius: 5px;
 }
 
 .current {
