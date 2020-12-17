@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: "Roboto";
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1, 
@@ -15,6 +15,15 @@ h2,
 
 .product-list h2 {
     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    margin-left: 25px;
 }
 
 nav ul {
@@ -86,24 +95,62 @@ footer {
     position:relative;
 }
 
-.welcome_content {
+.welcome__content {
     position: absolute;
+    text-align: center;
     top: 100px;
     left: 100px;
 }
 
-.selling-points_images {
-    border-radius: 100px;
+.selling-points {
+    margin: 50px auto;
 }
 
-.review_images {
-    border-radius: 50%;
-}
+.reviews__content,
+.selling-points {
+    max-width: 1000px;
+    display: flex;
+  }
 
-/* contact page */
-input, 
-select, 
-textarea {
-    border: 1px solid #c4c4c4;
-    border-radius: 5px;
-}
+  .selling-points > *,
+  .reviews__content > * {
+      flex: 1;
+  }
+  
+  .selling-points__images {
+      border-radius: 100px;
+      width: 100%;
+  } 
+  
+  .reviews {
+      text-align: center;
+      padding: 50px;
+  }
+
+  .reviews__content {
+      text-align: left;
+      margin: auto;
+  }
+
+  .reviews__content div {
+      margin: 50px;
+  }
+
+  .review__images {
+      width: 80px;
+      border-radius: 50%;
+      float: right;
+  }
+
+  .reviews__name {
+      display: block;
+  }
+  
+  /* contact page */
+  input, 
+  select, 
+  textarea {
+      border: 1px solid #c4c4c4;
+      border-radius: 5px;
+  }
+  
