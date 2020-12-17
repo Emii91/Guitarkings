@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Contact Guitar Kings">
-    <title>Guitar Kings | Contact</title>
-    <link href="css/styles.css" rel="stylesheet" />
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta name="description" content="Contact Guitar Kings">
+   <title>Guitar Kings | Contact</title>
+   <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <a href="index.html" class="logo">Guitar Kings</a>
-			<nav>
-				<ul>
-				  <li><a href="index.html">Home</a></li>
-          <li><a href="guitars.html">Guitars</a></li>
-          <li><a href="contact.html" class="current">Contact</a></li>
-        </ul>
-			</nav>
+   <header>
+    <a href="index.html" class="logo">Guitar Kings</a>
+		 <nav>
+			<ul>
+			 <li><a href="index.html">Home</a></li>
+       <li><a href="guitars.html">Guitars</a></li>
+       <li><a href="contact.html" class="current">Contact</a></li>
+      </ul>
+		 </nav>
     </header>
-    <main>
-      <h1>Contact Us</h1>
-      <form action="form-success.php" method="POST">
-        <fieldset>
-          <legend>Your details</legend>
-          <label for="name">Your name</label>
-          <input type="text" name="name" id="name" class="form__input" required>
-          <label for="phone">Your phone number</label>
-          <input type="tel" name="phone" id="phone" class="form__input" required>
-          <label for="email">Your email address</label>
-          <input type="email" name="email" id="email" class="form__input" required>
-        </fieldset>
-        <fieldset>
-          <legend>Your purchase</legend>
-          <select name="product">
-            <option value="adirondack-red">Adirondack Red</option>
-            <option value="adirondack-red">Adirondack Blue</option>
-            <option value="adirondack-red">Adirondack Purple</option>
+    <main class="contact">
+     <h1>Contact Us</h1>
+     <form method="POST">
+       <div class="form-wrapper">
+        <section>
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name />">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+          <label for="guitar">Guitar</label>
+          <select id="guitar" name="Guitar">
+           <option value="adirondack Red">Adirondack Red</option>
+           <option value="adirondack Blue">Adirondack Blue</option>
+           <option value="adirondack Green">Adirondack Green</option>
           </select>
-        </fieldset>
-        <input type="checkbox" id="email-updates" />
-        <label for="email-updates">Sign up for email updates</label>
-        <label for="message">message</label>
-        <textarea id="message" name="message"></textarea>
-        <input type="submit" value="Buy product" class="cta" />
-      </form>
-    </main>          
-    <footer>
-        Copyright &copy;
-    </footer>
+          <div>
+            <input type="checkbox" id="email-updates" name="email-updates">
+           <Label for="email-updates">Sign up for email updates.</Label>
+          </div>
+         </section>
+         <section>
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+         </section>
+       </div>
+       <input type="submit" value="Send Now" class="cta" />
+    </form>
+   </main>         
+  <footer>Copyright &copy;</footer>
  </body>
 </html>
